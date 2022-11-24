@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+	<StartOrStop>Start</StartOrStop> <!--> Start / Stop <!-->
+	<HalfPriceForDebugging>False</HalfPriceForDebugging>
+	<LoggingLevel>DEBUG</LoggingLevel> <!--> DEBUG/INFO/WARNING/ERROR/CRITICAL <!-->
+	<ExecutionInterval>1200</ExecutionInterval>
+	<Databases>
+		<Orders>
+			<FileName>Orders.db</FileName>
+			<CreateColumns>orderTxId TEXT, timeInvestStart DATETIME, timeOrder DATETIME, pair TEXT, orderType TEXT, price REAL, cost REAL, volume REAL, fee REAL, orderState TEXT</CreateColumns>
+			<Columns>orderTxId, timeInvestStart, timeOrder, pair, orderType, price, cost, volume, fee, orderState</Columns>
+		</Orders>
+	</Databases>
+	<Pairs>
+		<XETHZEUR><InvestPerMonth>100</InvestPerMonth><Exchange>Kraken</Exchange></XETHZEUR>
+		<XLTCZEUR><InvestPerMonth>100</InvestPerMonth><Exchange>Kraken</Exchange></XLTCZEUR>
+		<XXMRZEUR><InvestPerMonth>100</InvestPerMonth><Exchange>Kraken</Exchange></XXMRZEUR>
+		<XXBTZEUR><InvestPerMonth>100</InvestPerMonth><Exchange>Kraken</Exchange></XXBTZEUR>
+	</Pairs>
+</settings>
